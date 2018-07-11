@@ -1,0 +1,10 @@
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\WindowsApplication1.Form1.resources
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\WindowsApplication1.Resources.resources
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word 1.0.vbproj.GenerateResource.Cache
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word 1.0.exe
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word 1.0.pdb
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word 1.0.xml
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word 1.0.exe
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word 1.0.xml
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word 1.0.pdb
+D:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\WindowsApplication1.About.resources
