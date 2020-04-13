@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Cartoon Office Word.exe" version="1.0.2004.0" publicKeyToken="1f1bcc89e825ab57" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Cartoon Office Word" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Cartoon Office Word.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.VisualBasic.PowerPacks.Vs" version="10.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cartoon Office Word.exe" size="104448">
+      <assemblyIdentity name="Cartoon Office Word" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>3wrkcPF6wSshN04jsq9cz0VQLjs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=CARTOONLOVEPANG\Cartoon" issuerKeyHash="e6abecb41dc0c1a5d8ea7ffbb13bd501c6393294" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>F7T+1Ui6ZRHa1S8+T+Fnv8Z03KQ=</DigestValue></Reference></SignedInfo><SignatureValue>IaPwjGThJeh121XypIj8//9say1ZRCk8dfSVFP/R5ODYv6Mhz1UUHIJARQCo0tXLdmYZYRNDX4Vb6ue5ex9T+ELGuI3sMVskAXHZLzb4Fhv/9Nkw2YTpIHsYc5vKN7Sb1BODFwG4O/PMyBUYKcEc/QJJ/S5Tfto+B9afc7myZm4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>6EmZjlb775oDlQ3WwravBc2BcQSSRxh2z6FFxWAfOYs4OtvoP3vVIiLF+HKBTGKCN6tUFVCg5MiveInW/FYEoHPXGxsD4BcQlGK6aDTnBictgX2Xd7bbNrIFieXf5T0hWQ2o0AhOleMZ7VVO8QIZMmb31lfFMSjPYNhS4SwhBFk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a4dc74c6bf67e14f3e2fd5da1165ba48d5feb417" Description="" Url=""><as:assemblyIdentity name="Cartoon Office Word.exe" version="1.0.2004.0" publicKeyToken="1f1bcc89e825ab57" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CARTOONLOVEPANG\Cartoon</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>gTXD1moqgE/vVofFU12+QAcaGTU=</DigestValue></Reference></SignedInfo><SignatureValue>hz+IvzUpALw6CSofOxKELRT84nafj6gPnGioQd3Ow/sfeJB1Rj/E6iaTKiK+S+c482bGY8fDwD9w2U6rMsjV+pq4miId5V8vBqPAZNLHL/08cDgSsAbPcrSlcQqRFD0IHsGZz+kMF/A2Bi8gfkF1zrThBAan0EUkMnoS6RrzdjA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>6EmZjlb775oDlQ3WwravBc2BcQSSRxh2z6FFxWAfOYs4OtvoP3vVIiLF+HKBTGKCN6tUFVCg5MiveInW/FYEoHPXGxsD4BcQlGK6aDTnBictgX2Xd7bbNrIFieXf5T0hWQ2o0AhOleMZ7VVO8QIZMmb31lfFMSjPYNhS4SwhBFk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB9TCCAV6gAwIBAgIQJ2kPQos3ErBDPFmHq8MQqDANBgkqhkiG9w0BAQUFADA5MTcwNQYDVQQDHi4AQwBBAFIAVABPAE8ATgBMAE8AVgBFAFAAQQBOAEcAXABDAGEAcgB0AG8AbwBuMB4XDTIwMDQxMzE1MzE0NVoXDTIxMDQxMzIxMzE0NVowOTE3MDUGA1UEAx4uAEMAQQBSAFQATwBPAE4ATABPAFYARQBQAEEATgBHAFwAQwBhAHIAdABvAG8AbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA6EmZjlb775oDlQ3WwravBc2BcQSSRxh2z6FFxWAfOYs4OtvoP3vVIiLF+HKBTGKCN6tUFVCg5MiveInW/FYEoHPXGxsD4BcQlGK6aDTnBictgX2Xd7bbNrIFieXf5T0hWQ2o0AhOleMZ7VVO8QIZMmb31lfFMSjPYNhS4SwhBFkCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBzN7t56vFswmbP1EgFdtRL0dEViNrSH/St8WtQ8mvRKut1xiGTAzkP7cMEWvk8hGGZpR7jL02W0amg9cubLld6iThusOoBj4W/r+9cD94y9DuC06wYMzd//w6DqOXww6YIfDsg2+36imQl1VpoZRsnB9q/+XZ9GyYuOj4eNhBq9Q==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

@@ -22,7 +22,6 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TextDisplay = New System.Windows.Forms.RichTextBox()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
@@ -31,7 +30,6 @@ Partial Class Form1
         Me.FilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewDateAndTimeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -41,16 +39,22 @@ Partial Class Form1
         Me.EnglishToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ThaiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutThisProgramToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PrintForm1 = New Microsoft.VisualBasic.PowerPacks.Printing.PrintForm(Me.components)
+        Me.HelpToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EasyMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AdvancedMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TextDisplay
         '
         Me.TextDisplay.Font = New System.Drawing.Font("Tahoma", 20.0!)
-        Me.TextDisplay.Location = New System.Drawing.Point(0, 28)
+        Me.TextDisplay.Location = New System.Drawing.Point(0, 27)
         Me.TextDisplay.Name = "TextDisplay"
-        Me.TextDisplay.Size = New System.Drawing.Size(1146, 855)
+        Me.TextDisplay.Size = New System.Drawing.Size(1146, 356)
         Me.TextDisplay.TabIndex = 1
         Me.TextDisplay.Text = ""
         '
@@ -60,7 +64,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FilesToolStripMenuItem, Me.PrintToolStripMenuItem, Me.InsertToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FilesToolStripMenuItem, Me.InsertToolStripMenuItem, Me.HelpToolStripMenuItem, Me.PrintToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1146, 24)
@@ -71,8 +75,8 @@ Partial Class Form1
         '
         Me.FilesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.OpenToolStripMenuItem})
         Me.FilesToolStripMenuItem.Name = "FilesToolStripMenuItem"
-        Me.FilesToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
-        Me.FilesToolStripMenuItem.Text = "Files"
+        Me.FilesToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FilesToolStripMenuItem.Text = "File"
         '
         'SaveToolStripMenuItem
         '
@@ -88,12 +92,6 @@ Partial Class Form1
         Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
-        'PrintToolStripMenuItem
-        '
-        Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.PrintToolStripMenuItem.Text = "Print"
-        '
         'InsertToolStripMenuItem
         '
         Me.InsertToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewDateAndTimeToolStripMenuItem})
@@ -104,12 +102,12 @@ Partial Class Form1
         'NewDateAndTimeToolStripMenuItem
         '
         Me.NewDateAndTimeToolStripMenuItem.Name = "NewDateAndTimeToolStripMenuItem"
-        Me.NewDateAndTimeToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.NewDateAndTimeToolStripMenuItem.Text = "New Date And Time"
+        Me.NewDateAndTimeToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.NewDateAndTimeToolStripMenuItem.Text = "Type Date And Time"
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingToolStripMenuItem, Me.AboutThisProgramToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingToolStripMenuItem, Me.AboutThisProgramToolStripMenuItem, Me.HelpToolStripMenuItem1})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
@@ -153,19 +151,53 @@ Partial Class Form1
         Me.AboutThisProgramToolStripMenuItem.Size = New System.Drawing.Size(181, 22)
         Me.AboutThisProgramToolStripMenuItem.Text = "About This Program"
         '
-        'PrintForm1
+        'HelpToolStripMenuItem1
         '
-        Me.PrintForm1.DocumentName = "document"
-        Me.PrintForm1.Form = Me
-        Me.PrintForm1.PrintAction = System.Drawing.Printing.PrintAction.PrintToPrinter
-        Me.PrintForm1.PrinterSettings = CType(resources.GetObject("PrintForm1.PrinterSettings"), System.Drawing.Printing.PrinterSettings)
-        Me.PrintForm1.PrintFileName = Nothing
+        Me.HelpToolStripMenuItem1.Name = "HelpToolStripMenuItem1"
+        Me.HelpToolStripMenuItem1.Size = New System.Drawing.Size(181, 22)
+        Me.HelpToolStripMenuItem1.Text = "Help"
+        '
+        'PrintToolStripMenuItem
+        '
+        Me.PrintToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EasyMenuToolStripMenuItem, Me.AdvancedMenuToolStripMenuItem})
+        Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
+        Me.PrintToolStripMenuItem.Text = "Print"
+        '
+        'EasyMenuToolStripMenuItem
+        '
+        Me.EasyMenuToolStripMenuItem.Name = "EasyMenuToolStripMenuItem"
+        Me.EasyMenuToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.EasyMenuToolStripMenuItem.Text = "Easy-Menu"
+        '
+        'AdvancedMenuToolStripMenuItem
+        '
+        Me.AdvancedMenuToolStripMenuItem.Name = "AdvancedMenuToolStripMenuItem"
+        Me.AdvancedMenuToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.AdvancedMenuToolStripMenuItem.Text = "Advanced Menu"
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
+        'PrintDocument1
+        '
+        '
+        'PrintDialog1
+        '
+        Me.PrintDialog1.UseEXDialog = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1146, 881)
+        Me.ClientSize = New System.Drawing.Size(1146, 382)
         Me.Controls.Add(Me.TextDisplay)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -184,8 +216,6 @@ Partial Class Form1
     Friend WithEvents FilesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SaveToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents OpenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PrintToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PrintForm1 As Microsoft.VisualBasic.PowerPacks.Printing.PrintForm
     Friend WithEvents InsertToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NewDateAndTimeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -195,5 +225,11 @@ Partial Class Form1
     Friend WithEvents EnglishToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ThaiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AboutThisProgramToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-
+    Friend WithEvents PrintToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintDialog1 As PrintDialog
+    Friend WithEvents EasyMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents AdvancedMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents HelpToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
 End Class

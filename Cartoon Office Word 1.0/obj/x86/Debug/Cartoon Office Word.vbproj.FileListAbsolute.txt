@@ -26,3 +26,23 @@ E:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\o
 E:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.Resources.resources
 E:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.Startup_form.resources
 E:\visual studio 2010\Projects\Cartoon Office Word 1.0\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.vbproj.GenerateResource.Cache
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word.exe
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word.pdb
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word.xml
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.About.resources
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.DateAndTime_Settings.resources
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.Form1.resources
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.Resources.resources
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.Startup_form.resources
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.vbproj.GenerateResource.cache
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.exe
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.xml
+C:\Users\Cartoon\Source\Repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.pdb
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.vbprojResolveAssemblyReference.cache
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word.exe.manifest
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\bin\Debug\Cartoon Office Word.application
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.TrustInfo.xml
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.exe.manifest
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\Cartoon Office Word.application
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.Help.resources
+C:\Users\Cartoon\source\repos\CartoonProduction\CartoonOffice\Cartoon Office Word 1.0\obj\x86\Debug\CartoonOffice.Word.AdvancedPrint.resources
