@@ -30,6 +30,7 @@ Partial Class Form1
         Me.FilesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.InsertToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewDateAndTimeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -43,14 +44,21 @@ Partial Class Form1
         Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EasyMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AdvancedMenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ChangeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FontToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ColourToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.FontDialog1 = New System.Windows.Forms.FontDialog()
+        Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'TextDisplay
         '
+        Me.TextDisplay.AcceptsTab = True
+        Me.TextDisplay.EnableAutoDragDrop = True
         Me.TextDisplay.Font = New System.Drawing.Font("Tahoma", 20.0!)
         Me.TextDisplay.Location = New System.Drawing.Point(0, 27)
         Me.TextDisplay.Name = "TextDisplay"
@@ -64,7 +72,7 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FilesToolStripMenuItem, Me.InsertToolStripMenuItem, Me.HelpToolStripMenuItem, Me.PrintToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FilesToolStripMenuItem, Me.InsertToolStripMenuItem, Me.HelpToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ChangeToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(1146, 24)
@@ -73,7 +81,7 @@ Partial Class Form1
         '
         'FilesToolStripMenuItem
         '
-        Me.FilesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.OpenToolStripMenuItem})
+        Me.FilesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SaveToolStripMenuItem, Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem})
         Me.FilesToolStripMenuItem.Name = "FilesToolStripMenuItem"
         Me.FilesToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FilesToolStripMenuItem.Text = "File"
@@ -91,6 +99,13 @@ Partial Class Form1
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
         Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.CloseToolStripMenuItem.Text = "Close"
         '
         'InsertToolStripMenuItem
         '
@@ -176,6 +191,25 @@ Partial Class Form1
         Me.AdvancedMenuToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.AdvancedMenuToolStripMenuItem.Text = "Advanced Menu"
         '
+        'ChangeToolStripMenuItem
+        '
+        Me.ChangeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FontToolStripMenuItem, Me.ColourToolStripMenuItem})
+        Me.ChangeToolStripMenuItem.Name = "ChangeToolStripMenuItem"
+        Me.ChangeToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
+        Me.ChangeToolStripMenuItem.Text = "Change"
+        '
+        'FontToolStripMenuItem
+        '
+        Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
+        Me.FontToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.FontToolStripMenuItem.Text = "Font"
+        '
+        'ColourToolStripMenuItem
+        '
+        Me.ColourToolStripMenuItem.Name = "ColourToolStripMenuItem"
+        Me.ColourToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ColourToolStripMenuItem.Text = "Color"
+        '
         'PrintPreviewDialog1
         '
         Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
@@ -197,12 +231,15 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(1146, 382)
+        Me.ControlBox = False
         Me.Controls.Add(Me.TextDisplay)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
-        Me.Text = "Cartoon Office Word"
+        Me.Text = "Cartoon Office Word [BETA]"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -232,4 +269,10 @@ Partial Class Form1
     Friend WithEvents EasyMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AdvancedMenuToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents HelpToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents CloseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ChangeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FontToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents ColourToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FontDialog1 As System.Windows.Forms.FontDialog
+    Friend WithEvents ColorDialog1 As System.Windows.Forms.ColorDialog
 End Class

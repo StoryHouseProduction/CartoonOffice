@@ -72,6 +72,7 @@ Partial Class Startup_form
         Me.Label3.Size = New System.Drawing.Size(35, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "BETA"
+        Me.Label3.UseWaitCursor = True
         '
         'Startup_form
         '
@@ -84,6 +85,7 @@ Partial Class Startup_form
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Startup_form"
+        Me.ShowInTaskbar = False
         Me.Text = "Welcome"
         Me.UseWaitCursor = True
         Me.ResumeLayout(False)

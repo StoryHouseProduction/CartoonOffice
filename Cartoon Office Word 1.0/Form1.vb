@@ -40,6 +40,10 @@
         ThaiToolStripMenuItem.Text = "Thai"
         AboutThisProgramToolStripMenuItem.Text = "About This Program"
         HelpToolStripMenuItem1.Text = "Help"
+        CloseToolStripMenuItem.Text = "Close"
+        FontToolStripMenuItem.Text = "Font"
+        ColourToolStripMenuItem.Text = "Color"
+        ChangeToolStripMenuItem.Text = "Change"
     End Sub
 
     Private Sub ThaiToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ThaiToolStripMenuItem.Click
@@ -57,6 +61,10 @@
         ThaiToolStripMenuItem.Text = "ไทย"
         AboutThisProgramToolStripMenuItem.Text = "เกี่ยวกับโปรแกรม"
         HelpToolStripMenuItem1.Text = "ช่วยเหลือ"
+        CloseToolStripMenuItem.Text = "ปิดโปรแกรม"
+        FontToolStripMenuItem.Text = "ฟอนต์"
+        ColourToolStripMenuItem.Text = "สี"
+        ChangeToolStripMenuItem.Text = "เปลี่ยน"
     End Sub
 
     Private Sub AboutThisProgramToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutThisProgramToolStripMenuItem.Click
@@ -82,5 +90,19 @@
 
     Private Sub AdvancedMenuToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AdvancedMenuToolStripMenuItem.Click
         My.Forms.AdvancedPrint.ShowDialog()
+    End Sub
+
+    Private Sub CloseToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CloseToolStripMenuItem.Click
+        End
+    End Sub
+
+    Private Sub FontToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FontToolStripMenuItem.Click
+        FontDialog1.ShowDialog()
+        TextDisplay.Font = FontDialog1.Font
+    End Sub
+
+    Private Sub ColourToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ColourToolStripMenuItem.Click
+        ColorDialog1.ShowDialog()
+        TextDisplay.ForeColor = ColorDialog1.Color
     End Sub
 End Class

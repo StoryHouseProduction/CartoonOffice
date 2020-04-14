@@ -66,6 +66,7 @@ Partial Class Help
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Help"
+        Me.ShowInTaskbar = False
         Me.Text = "Help | ช่วยเหลือ"
         Me.ResumeLayout(False)
         Me.PerformLayout()

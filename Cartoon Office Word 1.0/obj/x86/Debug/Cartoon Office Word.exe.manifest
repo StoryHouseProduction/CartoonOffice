@@ -47,14 +47,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cartoon Office Word.exe" size="104448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Cartoon Office Word.exe" size="210944">
       <assemblyIdentity name="Cartoon Office Word" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>4IDs7s63hr68Eyn/kmjGUq1Utz8=</dsig:DigestValue>
+        <dsig:DigestValue>CXgRnFwsFCESeCR2gbYQJIC+khc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
